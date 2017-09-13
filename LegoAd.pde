@@ -1,5 +1,15 @@
-// LegoAd
+// Lego Family
 // Starter Code
+int purple_x=0;
+int purple_y=0;
+int red_y=400;
+int red_x=0;
+int blue_x=660;
+int blue_y=400;
+int yellow_y;
+int yellow_x=660;
+int rise=1;
+
 
 void setup() {
   size(700,400);
@@ -8,41 +18,79 @@ void setup() {
 }
 
 void draw() {
-  // Homer
-  fill(250,193,35);    // yellow skin
-  rect(210,175,40,45); // Homer head
-  fill(245,245,245);   // off-white
-  rect(210,220,40,50); // Homer shirt
-  fill(89,79,217);     // blue jeans
-  rect(210,270,40,45); // Homer pants
+     background(255);
 
-  // Marge
-  fill(250,193,35);    // yellow skin
-  rect(270,185,40,35); // Marge head
-  fill(41,82,240);     // blue
-  rect(270,90,40,95); // Marge hair
-  fill(177,210,75);    // green
-  rect(270,220,40,95); // Marge dress
+  // Red
+  fill(17,167,25); 
+  rect(red_x,red_y-135,40,30); // Homer head
+  fill(255,0,0);
+  rect(red_x,red_y-145,40,10); // Homer head
+  fill(17,167,25);
+  rect(red_x,red_y-165,40,20); // Homer head
+  fill(167,92,17);   // off-white
+  rect(red_x,red_y-105,40,50); // Homer shirt
+  fill(17,167,25);     // blue jeans
+  rect(red_x,red_y-55,40,45); // Homer pants
   
-  // Bart
-  fill(250,193,35);    // yellow skin
-  rect(330,225,40,30); // Bart head
-  fill(240,71,41);     // red-ish
-  rect(330,255,40,30); // Bart shirt
-  fill(89,79,217);     // blue jeans
-  rect(330,285,40,30); // Bart pants
+
+  // Blue
+  fill(17,167,25); 
+  rect(blue_x,blue_y-135,40,30); // Homer head
+  fill(0,0,255);
+  rect(blue_x,blue_y-145,40,10); // Homer head
+  fill(17,167,25);
+  rect(blue_x,blue_y-165,40,20); // Homer head
+  fill(167,92,17);   // off-white
+  rect(blue_x,blue_y-105,40,50); // Homer shirt
+  fill(17,167,25);     // blue jeans
+  rect(blue_x,blue_y-55,40,45); // Homer pants
   
-  // Lisa
-  fill(250,193,35);    // yellow skin
-  rect(390,230,40,30); // Lisa head
-  fill(229,77,35);     // orange-ish
-  rect(390,260,40,55); // Lisa dress
+  // Yellow
+  fill(17,167,25); 
+  rect(yellow_x,yellow_y+30,40,45); 
+  fill(255,255,0);
+  rect(yellow_x,yellow_y+20,40,10);
+  fill(17,167,25);
+  rect(yellow_x,yellow_y,40,20); 
+  fill(167,92,17); 
+  rect(yellow_x,yellow_y+60,40,50);
+  fill(17,167,25);     
+  rect(yellow_x,yellow_y+110,40,45); 
   
-  // Maggie
-  fill(250,193,35);    // yellow skin
-  rect(450,250,40,25); // Maggie head
-  fill(147,189,255);   // light blue
-  rect(450,275,40,40); // Maggie PJs
-  fill(255,0,0);       // red
-  ellipse(450+40/2,270,10,10); // Maggie pacifier
+  // Purple
+  fill(17,167,25); 
+  rect(purple_x,purple_y+30,40,45); 
+  fill(200,0,255);
+  rect(purple_x,purple_y+20,40,10);
+  fill(17,167,25);
+  rect(purple_x,purple_y,40,20); 
+  fill(167,92,17); 
+  rect(purple_x,purple_y+60,40,50);
+  fill(17,167,25);     
+  rect(purple_x,purple_y+110,40,45); 
+   purple_x+=1;
+   purple_y+=1;
+   red_x+=1;
+   red_y-=1;
+   blue_x-=1;
+   blue_y-=1;
+   yellow_y+=1; 
+   yellow_x-=1;
+   yellow_y = min(185, yellow_y);
+   yellow_x = max(280, yellow_x);
+   purple_y = min(185, purple_y);
+   purple_x = min(220, purple_x);
+   red_y = max(350, red_y);
+   red_x = min(400, red_x);
+
+   blue_x = max(340, blue_x);
+
+   blue_y = max(350, blue_y);
+   
+  
+
+
+
+  
+  
 }
