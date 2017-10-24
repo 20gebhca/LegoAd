@@ -20,7 +20,7 @@ void setup() {
 void draw() {
   background(255);
 
-  // Red
+  // Red Turtle
   fill(17, 167, 25); 
   rect(red_x, red_y-135, 40, 30); // Part 3
   fill(255, 0, 0);
@@ -33,7 +33,7 @@ void draw() {
   rect(red_x, red_y-55, 40, 45); // Part 5
 
 
-  // Blue
+  // Blue Turtle
   fill(17, 167, 25); 
   rect(blue_x, blue_y-135, 40, 30); // Part 3
   fill(0, 0, 255);
@@ -45,7 +45,7 @@ void draw() {
   fill(17, 167, 25);     // blue jeans
   rect(blue_x, blue_y-55, 40, 45); // Part 5
 
-  // Yellow
+  // Yellow Turtle
   fill(17, 167, 25); 
   rect(yellow_x, yellow_y+30, 40, 45); //Part 3
   fill(255, 255, 0);
@@ -57,7 +57,7 @@ void draw() {
   fill(17, 167, 25);     
   rect(yellow_x, yellow_y+110, 40, 45); //Part 5
 
-  // Purple
+  // Purple Turtle
   fill(17, 167, 25); 
   rect(purple_x, purple_y+30, 40, 45); //Part 3
   fill(200, 0, 255);
@@ -69,22 +69,22 @@ void draw() {
   fill(17, 167, 25);     
   rect(purple_x, purple_y+110, 40, 45); //Part 5
   //animation variables-
-  //purple
+  //moving purple to middle of screen
   purple_x+=1;
   purple_y+=1;
   purple_y = min(185, purple_y);
   purple_x = min(220, purple_x);
-//red
+//moving red to middle of screen
   red_x+=1;
   red_y-=1;
   red_y = max(350, red_y);
   red_x = min(400, red_x);
-//blue
+//moving blue to middle of screen
   blue_x-=1;
   blue_y-=1;
   blue_x = max(340, blue_x);
   blue_y = max(350, blue_y);
-//yellow
+//moving yellow to middle of screen
   yellow_y+=1; 
   yellow_x-=1;
   yellow_y = min(185, yellow_y);
